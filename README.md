@@ -1,1 +1,1 @@
-# ECSE211
+# ECSE211 - Design Principles and Methods
