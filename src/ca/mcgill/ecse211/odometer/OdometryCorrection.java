@@ -3,6 +3,7 @@
  */
 package ca.mcgill.ecse211.odometer;
 
+import ca.mcgill.ecse211.lab3.Lab3;
 import lejos.hardware.Sound;
 import lejos.hardware.ev3.LocalEV3;
 import lejos.hardware.port.Port;
@@ -30,9 +31,17 @@ public class OdometryCorrection implements Runnable {
    *        sensor defined in Lab2.java
    */
   public OdometryCorrection(SampleProvider colorSensor) throws OdometerExceptions {
-    this.odometer = Odometer.getOdometer();
+    this.odometer = Lab3.odometer;
     this.colorSensor = colorSensor;
     this.lightData = new float[colorSensor.sampleSize()];
+  }
+  
+  /**
+   * This method is where the logic for the odometer will run. Use the methods provided from the
+   * OdometerData class to implement the odometer.
+   */
+  public float[] readLightData() {
+    return this.lightData;
   }
 
   /**
@@ -67,16 +76,16 @@ public class OdometryCorrection implements Runnable {
         // Everything else accumulates over time.
         switch (numberOfLines) {
           case 1:
-            odometer.setY(0);
+            //odometer.setY(0);
             break;
           case 4:
-            odometer.setX(0);
+            //odometer.setX(0);
             break;
           case 9:
-            odometer.setY(0);
+            //odometer.setY(0);
             break;
           case 12:
-            odometer.setX(0);
+            //odometer.setX(0);
             break;
           default:
             break;
