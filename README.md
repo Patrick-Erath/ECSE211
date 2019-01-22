@@ -1,3 +1,3 @@
 # ECSE211 - Design Principles and Methods
 
-![playground][Images/Playground.png]
+![playground](Images/Playground.png)
