@@ -10,3 +10,6 @@ The goal of this project was to design an autonomous robot that can navigate thr
 
 ### Our Robot
 ![robot](Images/Robot.jpg)
+
+### Certificate of completion
+![Certificate](Images/Certificate.jpg)
